@@ -29,6 +29,22 @@ const sunglassesImages = [
   'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16958-c1-sunglasses_dd_dsc6021_04_06_2024.jpg',
 ];
 
+// WITH POWER COMPUTER BLU LENSES
+const withPowerBluImages = [
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7904_02_01_2023.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-computer-glasses:-ocean-blue-full-rim-wayfarer-lenskart-hustlr-hp-e15011-c6-eyeglasses_ocrean_blue_front_4.jpg.',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/sky-blue-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689595048517-hooper-hp-d15011l-c6-eyeglasses_g_8686_04_05_2023.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/midnight-blue-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689594935385-hooper-hp-d15011l-c9-eyeglasses_g_8701_04_05_2023.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/black-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689594898001-hooper-hp-d15011l-c8-eyeglasses_g_8694_04_05_2023.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/amber-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689594971819-hooper-hp-d15011l-c10-eyeglasses_g_8679_04_05_2023.jpg',
+];
+// WITH ZERO POWER COMPUTER BLU LENSES
+const withZeroPowerBluImages = [
+  'https://static1.lenskart.com/media/desktop/img/Nov22/eye1.jpg',
+  'https://static1.lenskart.com/media/desktop/img/Nov22/eye2.jpg',
+  'https://static1.lenskart.com/media/desktop/img/Nov22/eye3.jpg',
+];
+
 const CarouselRow = ({ title, images, viewRangeHref }: { title: string; images: string[]; viewRangeHref?: string }) => {
   const [startIdx, setStartIdx] = useState(0);
   const showCount = 3;
@@ -61,13 +77,13 @@ const CarouselRow = ({ title, images, viewRangeHref }: { title: string; images: 
           disabled={!canPrev}
           aria-label="Previous"
         >&#8249;</button>
-        <div className="flex-1 flex justify-center gap-12 overflow-hidden">
+        <div className="flex-1 flex justify-center gap-12 overflow-hidden transition-all duration-500 ease-in-out" style={{minHeight: '140px'}}>
           {images.slice(startIdx, startIdx + showCount).map((src, idx) => (
             <img
               key={idx}
               src={src}
               alt={title + ' ' + (startIdx + idx + 1)}
-              className="w-full max-w-[320px] md:max-w-[340px] h-[120px] md:h-[140px] object-contain"
+              className="w-full max-w-[320px] md:max-w-[340px] h-[120px] md:h-[140px] object-contain transition-transform duration-500 ease-in-out"
               style={{margin: '0 10px'}}
             />
           ))}
@@ -105,7 +121,6 @@ const Home: React.FC = () => {
         <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center md:items-start px-4">
           {/* Left text and logo */}
           <div className="md:w-1/4 w-full flex flex-col items-start mb-8 md:mb-0 pl-10 md:pl-20">
-            <img src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg" alt="Lenskart Logo" className="w-40 h-auto mb-6" />
             <h2 className="text-6xl font-light leading-tight text-gray-900 mb-2" style={{letterSpacing: '-2px'}}>
               WEAR<br/>
               <span className="font-bold">THE</span><br/>
@@ -283,8 +298,57 @@ const Home: React.FC = () => {
           <CarouselRow title="SUNGLASSES" images={sunglassesImages} />
         </div>
       </section>
-      {/* ...existing code... */}
-      
+      {/* Contact Lenses Section - New Addition */}
+      <div className="w-full bg-white py-12">
+        {/* Contact Lens Banner */}
+        <div className="w-full flex justify-center mb-8">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Nov22/Updated%20brand%20banner%20jj%20.jpg"
+            alt="Contact Lens Banner"
+            className="w-full max-w-screen-2xl object-cover rounded-lg shadow"
+          />
+        </div>
+        {/* Contact Lenses Section */}
+        <div className="max-w-screen-2xl mx-auto w-full">
+          <div className="flex justify-between items-center mb-2 px-2">
+            <h2 className="text-lg md:text-xl font-semibold tracking-wide">CONTACT LENSES</h2>
+            <a href="#" className="text-teal-500 font-medium hover:underline text-lg">View Range</a>
+          </div>
+          <div className="flex flex-row justify-center items-center space-x-12 mb-8">
+            {withPowerBluImages.map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`Contact Lens ${idx + 1}`}
+                className="h-28 md:h-32 object-contain drop-shadow bg-white rounded"
+                style={{minWidth: '120px', maxWidth: '180px'}}
+              />
+            ))}
+            <span className="text-5xl text-gray-300 ml-4">&#8250;</span>
+          </div>
+          {/* Color Contact Lenses Section */}
+          <div className="flex justify-between items-center mb-2 px-2">
+            <h2 className="text-lg md:text-xl font-semibold tracking-wide">COLOR CONTACT LENSES</h2>
+            <a href="#" className="text-teal-500 font-medium hover:underline text-lg">View Range</a>
+          </div>
+          <div className="flex flex-row justify-center items-center space-x-12">
+            {withZeroPowerBluImages.map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`Color Contact Lens ${idx + 1}`}
+                className="h-32 w-32 object-cover rounded shadow"
+              />
+            ))}
+            <span className="text-5xl text-gray-300 ml-4">&#8250;</span>
+          </div>
+        </div>
+      </div>
+      <CarouselRow
+        title="HUSTLR EYEGLASSES"
+        images={withPowerBluImages}
+        viewRangeHref="#"
+      />
     </>
   );
 };
