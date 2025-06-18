@@ -12,6 +12,14 @@ import Analytics from './pages/Analytics';
 import Layout from './components/Layout';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
+import Eyeglasses from './pages/Eyeglasses';
+import KidsGlasses from './pages/KidsGlasses';
+import ScreenGlasses from './pages/ScreenGlasses';
+import ContactLenses from './pages/ContactLenses';
+import Sunglasses from './pages/Sunglasses';
+import HomeEyeTest from './pages/HomeEyeTest';
+import StoreLocator from './pages/StoreLocator';
+import Brands from './pages/Brands';
 
 function App() {
   return (
@@ -64,6 +72,14 @@ function App() {
             </Layout>
           </ProtectedRoute>
         } />
+        <Route path="/eyeglasses" element={<Eyeglasses />} />
+        <Route path="/kids-glasses" element={<KidsGlasses />} />
+        <Route path="/screen-glasses" element={<ScreenGlasses />} />
+        <Route path="/contact-lenses" element={<ContactLenses />} />
+        <Route path="/sunglasses" element={<Sunglasses />} />
+        <Route path="/home-eye-test" element={<HomeEyeTest />} />
+        <Route path="/store-locator" element={<StoreLocator />} />
+        <Route path="/brands" element={<Brands />} />
       </Routes>
       <Toaster position="top-right" />
     </Router>

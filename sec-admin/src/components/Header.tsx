@@ -350,8 +350,18 @@ const Header: React.FC = () => {
 
   // Handler for navigation button click
   const handleCategoryClick = (cat: string) => {
-    // Navigate to a route like /category/EYEGLASSES (or similar)
-    navigate(`/category/${encodeURIComponent(cat)}`);
+    // Map category to the correct shop route path
+    const categoryToPath: Record<string, string> = {
+      'EYEGLASSES': '/eyeglasses',
+      'SCREEN GLASSES': '/screen-glasses',
+      'KIDS GLASSES': '/kids-glasses',
+      'CONTACT LENSES': '/contact-lenses',
+      'SUNGLASSES': '/sunglasses',
+      'HOME EYE-TEST': '/home-eye-test',
+      'STORE LOCATOR': '/store-locator',
+    };
+    const path = categoryToPath[cat] || '/';
+    navigate(path);
   };
 
   return (

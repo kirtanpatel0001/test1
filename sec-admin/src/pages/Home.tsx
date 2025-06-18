@@ -31,18 +31,69 @@ const sunglassesImages = [
 
 // WITH POWER COMPUTER BLU LENSES
 const withPowerBluImages = [
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e10235-c7-eyeglasses_g_2374.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-rimless-jj-e12565-c3-eyeglasses_john-jacobs-rimless-jj-e12565-c3-eyeglasses_g_3253.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/black-blue-full-rim-square-john-jacobs-tr-flex-jj-e14414-c5-eyeglasses__dsc5647.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/green-brown-full-rim-rectangle-john-jacobs-tr-flex-jj-e16847-c1-eyeglasses__dsc5067_23_04_2024.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/john-jacobs-jj-e14486-c4-eyeglasses_g_7954.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e13343-c2-eyeglasses_g_5786.jpg',
+];
+// WITH ZERO POWER COMPUTER BLU LENSES
+const withZeroPowerBluImages = [
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/gold-transparent-blue-gradient-full-rim-hexagonal-john-jacobs-jj-tints-jj-s13146-c4-sunglasses_john-jacobs-john-jacobs-jj-s13146-c4-sunglasses_g_1458_1_28july23.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/gold-brown-green-full-rim-round-john-jacobs-jj-tints-jj-s12810-c2-polarized-sunglasses-coltrane_g_1703_06_02_2025.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/black-grey-full-rim-cat-eye-john-jacobs-jj-tints-jj-s13085-c4-sunglasses_g_5377_08_11_23.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/blue-grey-transparent-full-rim-wayfarer-john-jacobs-jj-tints-jj-s13313--c1-sunglasses-basalt__dsc2472.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12808-c1-sunglasses_g_8863.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Black-Green-Solid-Full-Rim-Wayfarer-John-Jacobs-JJ-Tints-JJ-S13311-C3-Sunglasses_john-jacobs-jj-s13311-c3-sunglasses_sunglasses_g_980618_02_2022.jpg',
+];
+
+const airFlexImages = [
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12852-c1-eyeglasses_vincent-chase-vc-e12852-c1-eyeglasses_g_1089_1.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/Black-Full-Rim-Rectangle-Lenskart-AIR-Flex-LA-E12852-C2-Eyeglasses_vincent-chase-vc-e12852-c2-eyeglasses_2eyeglasses_G_2091_10_02_2022.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rimless-geometric-lenskart-air-rimless-la-e16173-eyeglasses_lk_dsc8871.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12947-c2-eyeglasses_vincent-chase-vc-e12947-c2-eyeglasses_G_1969_1.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/vincent-chase-la-e16170-c3-eyeglasses__dsc9649_25_10_2024.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/vincent-chase-la-e16170-c4-eyeglasses__dsc9641_25_10_2024.jpg'
+];
+
+const withPowerComputerBluLenses = [
   'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-monza-red-full-rim-hustlr-eyeglasses_g_7904_02_01_2023.jpg',
-  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-computer-glasses:-ocean-blue-full-rim-wayfarer-lenskart-hustlr-hp-e15011-c6-eyeglasses_ocrean_blue_front_4.jpg.',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-phone-computer-glasses:-ocean-blue-full-rim-wayfarer-lenskart-hustlr-hp-e15011-c6-eyeglasses_ocrean_blue_front_4.jpg',
   'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/sky-blue-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689595048517-hooper-hp-d15011l-c6-eyeglasses_g_8686_04_05_2023.jpg',
   'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/midnight-blue-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689594935385-hooper-hp-d15011l-c9-eyeglasses_g_8701_04_05_2023.jpg',
   'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/black-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689594898001-hooper-hp-d15011l-c8-eyeglasses_g_8694_04_05_2023.jpg',
   'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/amber-full-rim-wayfarer-lenskart-extra-narrow-hustlr-computer-eyeglasses_csvfile-1689594971819-hooper-hp-d15011l-c10-eyeglasses_g_8679_04_05_2023.jpg',
 ];
-// WITH ZERO POWER COMPUTER BLU LENSES
-const withZeroPowerBluImages = [
-  'https://static1.lenskart.com/media/desktop/img/Nov22/eye1.jpg',
-  'https://static1.lenskart.com/media/desktop/img/Nov22/eye2.jpg',
-  'https://static1.lenskart.com/media/desktop/img/Nov22/eye3.jpg',
+
+const withZeroPowerComputerBluLenses = [
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-transparent-black-grey-full-rim-rectangle-kids--8-12-yrs--hooper-flexi-hooper-hp-e15084l-c3-eyeglasses_blue-transparent-black-grey-full-rim-rectangle-kids-(8-12-yrs)-hooper-flexi-hooper-hp-e15084l-c3-eyeglasses_g_5351_9_21_22_22_march23.jpg.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/pink-transparent-purple-pink-tortoise-full-rim-rectangle-kids--5-8-yrs--hooper-tr-flex-hooper-hp-e15084m-c3-eyeglasses_g_5387.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/green-transparent-blue-full-rim-rectangle-kids-(8-12-yrs)-hooper-flexi-hooper-hp-e15085l-c1-eyeglasses_g_5328_9_21_22.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-transparent-pink-purple-full-rim-round-kids--5-8-yrs--hooper-flexi-hooper-hp-e15083m-c3-eyeglasses_blue-transparent-pink-purple-full-rim-round-kids-(5-8-yrs)-hooper-flexi-hooper-hp-e15083m-c3-eyeglasses_g_8786_9_21_22_22_march23.jpg.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e10025l-c11-eyeglasses_csvfile-1717417134037-_dsc5674.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/kids-glasses:-black-blue-transparent-black-full-rim-rectangle-kids--8-12-yrs--hooper-astra-hooper-hp-e10014l-c4_hooper-hp-e10014l-c4-eyeglasses_g_0981_22_march23.jpg.jpg',
+  
+];
+
+const eyewearCategoriesWithImages = [
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aqualens-10h-dailies_134722-fda.png',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aqualens-daily-disposable-contact-lenses--30-lenses-box_aqualens-daily-disposable-contact-lenses--30-lenses-box_csvfile-1681129631044-134723.png.png',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aqualens-24h-dailies_118538-fda.png',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aqualens-24h-toric-dailies_144128-fda.png',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aqualens-nxt-monthly_144127-fda.png',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aqualens-10h-monthly_134538-fda.png'
+
+
+];
+
+const eyelens = [
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-dusk-blue-premium-powered-monthly-1lp_nw-153143_dusk_blue.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-gray-premium-powered-monthly-1lp_nw-153145_gray.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-silver-gray-premium-zero-power-monthly_nw-151324_sky_blue.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-turquoise-premium-powered-monthly-1lp_nw-153142_turquoise.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-emerald-premium-powered-monthly-1lp_nw-153141_emerald.jpg',
+  'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//a/i/aquacolor-turquoise-zero-power-dailies_216761_turquoise_nw.jpg'
 ];
 
 const CarouselRow = ({ title, images, viewRangeHref }: { title: string; images: string[]; viewRangeHref?: string }) => {
@@ -116,6 +167,7 @@ const Home: React.FC = () => {
     <>
       <Header />
       <HeroCarousel />
+      
       {/* Eyewear Category Carousel Section */}
       <section className="w-full bg-white py-12">
         <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center md:items-start px-4">
@@ -300,7 +352,7 @@ const Home: React.FC = () => {
       </section>
       {/* Contact Lenses Section - New Addition */}
       <div className="w-full bg-white py-12">
-        {/* Contact Lens Banner */}
+        {/* Contact Lens Banner KIRTAN */}
         <div className="w-full flex justify-center mb-8">
           <img
             src="https://static1.lenskart.com/media/desktop/img/Nov22/Updated%20brand%20banner%20jj%20.jpg"
@@ -308,47 +360,146 @@ const Home: React.FC = () => {
             className="w-full max-w-screen-2xl object-cover rounded-lg shadow"
           />
         </div>
-        {/* Contact Lenses Section */}
-        <div className="max-w-screen-2xl mx-auto w-full">
-          <div className="flex justify-between items-center mb-2 px-2">
-            <h2 className="text-lg md:text-xl font-semibold tracking-wide">CONTACT LENSES</h2>
-            <a href="#" className="text-teal-500 font-medium hover:underline text-lg">View Range</a>
-          </div>
-          <div className="flex flex-row justify-center items-center space-x-12 mb-8">
-            {withPowerBluImages.map((src, idx) => (
-              <img
-                key={idx}
-                src={src}
-                alt={`Contact Lens ${idx + 1}`}
-                className="h-28 md:h-32 object-contain drop-shadow bg-white rounded"
-                style={{minWidth: '120px', maxWidth: '180px'}}
-              />
-            ))}
-            <span className="text-5xl text-gray-300 ml-4">&#8250;</span>
-          </div>
-          {/* Color Contact Lenses Section */}
-          <div className="flex justify-between items-center mb-2 px-2">
-            <h2 className="text-lg md:text-xl font-semibold tracking-wide">COLOR CONTACT LENSES</h2>
-            <a href="#" className="text-teal-500 font-medium hover:underline text-lg">View Range</a>
-          </div>
-          <div className="flex flex-row justify-center items-center space-x-12">
-            {withZeroPowerBluImages.map((src, idx) => (
-              <img
-                key={idx}
-                src={src}
-                alt={`Color Contact Lens ${idx + 1}`}
-                className="h-32 w-32 object-cover rounded shadow"
-              />
-            ))}
-            <span className="text-5xl text-gray-300 ml-4">&#8250;</span>
+        <section className="w-full bg-white py-12">
+        <div className="max-w-screen-2xl mx-auto px-4">
+          <CarouselRow title="EYEGLASSES" images={withPowerBluImages} />
+          <CarouselRow title="SUNGLASSES" images={withZeroPowerBluImages} />
+        </div>
+      </section>
+      <div className="w-full flex justify-center mt-8">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-AIR-Banner.jpg"
+            alt="LK Air Banner"
+            className="w-full max-w-screen-2xl object-cover rounded-lg shadow"
+          />
+        </div>
+        <section className="w-full bg-white py-12">
+        <div className="max-w-screen-2xl mx-auto px-4">
+          <CarouselRow title="EYEGLASSES" images={withPowerBluImages} />
+          <CarouselRow title="SUNGLASSES" images={withZeroPowerBluImages} />
+        </div>
+      </section>
+        
+       
+      </div>
+      <div className="w-full flex justify-center mt-8">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-Readers-Banner.jpg"
+            alt="LK Air Banner"
+            className="w-full max-w-screen-2xl object-cover rounded-lg shadow"
+          />
+      </div>
+      <section className="w-full bg-white py-12">
+        <div className="max-w-screen-2xl mx-auto px-4">
+          <CarouselRow title="EYEGLASSES" images={airFlexImages} />
+          
+        </div>
+      </section>
+      <div className="w-full flex justify-center mt-8">
+          <img
+            src="https://static5.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg"
+            alt="LK Air Banner"
+            className="w-full max-w-screen-2xl object-cover rounded-lg shadow"
+          />
+      </div>
+      <section className="w-full bg-white py-12">
+        <div className="max-w-screen-2xl mx-auto px-4">
+          <CarouselRow title="EYEGLASSES" images={withPowerComputerBluLenses} />
+          <CarouselRow title="EYEGLASSES" images={withZeroPowerComputerBluLenses} />
+          
+        </div>
+      </section>
+      <div className="w-full flex justify-center mt-8">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/June22/Our-Brands-Banner.jpg"
+            alt="LK Air Banner"
+            className="w-full max-w-screen-2xl object-cover rounded-lg shadow"
+          />
+      </div>
+      <section className="w-full bg-white py-12">
+        <div className="max-w-screen-2xl mx-auto px-4">
+          <CarouselRow title="EYEGLASSES" images={eyewearCategoriesWithImages} />
+          <CarouselRow title="EYEGLASSES" images={eyelens} />
+          
+        </div>
+      </section>
+      {/* Meet Our Happy Customers Section */}
+      <section className="w-full py-12" style={{ background: '#ffed8f' }}>
+        <div className="max-w-screen-2xl mx-auto flex flex-col items-center">
+          <h2 className="text-4xl font-semibold mb-10 text-center tracking-wide" style={{ fontFamily: 'inherit' }}>
+            MEET OUR HAPPY CUSTOMERS
+          </h2>
+          <div className="flex flex-col md:flex-row gap-8 w-full justify-center items-center">
+            <div className="bg-black rounded-xl overflow-hidden shadow-lg w-full max-w-[400px] aspect-video">
+              <iframe width="100%" height="220" src="https://www.youtube.com/embed/HYPqf_eVvvM" title="Customer Reviews" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+            <div className="bg-black rounded-xl overflow-hidden shadow-lg w-full max-w-[400px] aspect-video">
+              <iframe width="100%" height="220" src="https://www.youtube.com/embed/SQm3RxXRunw" title="Customer Testimonial" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+            <div className="bg-black rounded-xl overflow-hidden shadow-lg w-full max-w-[400px] aspect-video">
+              <iframe width="100%" height="220" src="https://www.youtube.com/embed/IZpUQ-S_LcM" title="Customer Diaries" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
           </div>
         </div>
-      </div>
-      <CarouselRow
-        title="HUSTLR EYEGLASSES"
-        images={withPowerBluImages}
-        viewRangeHref="#"
-      />
+      </section>
+      {/* Custom Footer Section */}
+      <footer className="w-full bg-[#0a0d36] text-white pt-16 pb-8 px-4 font-sans" style={{minWidth:'100vw', position: 'static'}}>
+        <div className="max-w-full mx-auto">
+          <h2 className="text-5xl font-light mb-6" style={{letterSpacing: '-1px'}}>Buy The Best Eyewear From Lenskart</h2>
+          <p className="text-lg font-normal leading-relaxed mb-2 text-[#bfc2e2]">Lenskart Is The Leading E-Commerce Portal For Eyewear In India. It Has Revolutionised The Eyewear Industry In The Country With Its Omni-Channel Approach. From An Ever-Growing Number Of Offline Stores Across Major Cities In The Country To Innovative Integration Of Technology While Purchasing Online, Lenskart Caters To Every Customer With Several Deals And Offers.</p>
+          <p className="text-lg font-normal leading-relaxed mb-6 text-[#bfc2e2]">A One-Stop Online Solution For Purchasing Eyewear And Its Accessories, Lenskart Delivers Them Right At Your Doorstep With Convenient Methods Of Payment. <span className="text-[#3ed0c6]">Sunglasses</span> as well as <span className="text-[#3ed0c6]">Eyeglasses</span> Are Available For Men And Women In A Diverse Array Of Styles And Trendy Colours. If You Want To Try Out <span className="text-[#3ed0c6]">Contact Lenses</span>, Pick The Ones Of Your Choice From The Extensive Variety Of Coloured Contact Lenses From Our Online Store.</p>
+          <div className="flex flex-col md:flex-row justify-between mt-12 mb-8 gap-8">
+            <div>
+              <h3 className="text-2xl font-medium mb-4">Services</h3>
+              <ul className="space-y-2 text-[#bfc2e2]">
+                <li>Store Locator</li>
+                <li>Buying Guide</li>
+                <li>Frame Size</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-medium mb-4">About Us</h3>
+              <ul className="space-y-2 text-[#bfc2e2]">
+                <li>We Are Hiring</li>
+                <li>Refer And Earn</li>
+                <li>About us</li>
+                <li>Lenskart Coupons</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-medium mb-4">Help</h3>
+              <ul className="space-y-2 text-[#bfc2e2]">
+                <li>FAQ's</li>
+                <li>Grievance Redressal</li>
+                <li>Cardemi</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center md:items-end">
+              <div className="flex gap-4 mb-4">
+                <img src="https://static.lenskart.com/media/desktop/img/play-store.svg" alt="Google Play" className="h-12" />
+                <img src="https://static.lenskart.com/media/desktop/img/app-store.svg" alt="App Store" className="h-12" />
+              </div>
+              <p className="text-lg text-[#bfc2e2] text-center md:text-right mb-2">Download Lenskart App to buy<br/>Eyeglasses, Sunglasses and Contact Lenses</p>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center border-t border-[#23265a] pt-6 mt-8 gap-4">
+            <div className="flex flex-wrap gap-6 text-[#bfc2e2] text-lg">
+              <span>T & C</span>
+              <span>Privacy</span>
+              <span>Disclaimer</span>
+            </div>
+            <div className="flex items-center gap-6 text-[#bfc2e2] text-lg">
+              <span>Version 1.0.0</span>
+              <span className="hidden md:inline">||</span>
+              <span>Follow Us</span>
+              <a href="#"><img src="https://static.lenskart.com/media/desktop/img/facebook.svg" alt="Facebook" className="h-7 inline" /></a>
+              <a href="#"><img src="https://static.lenskart.com/media/desktop/img/instagram.svg" alt="Instagram" className="h-7 inline" /></a>
+              <a href="#"><img src="https://static.lenskart.com/media/desktop/img/twitter.svg" alt="Twitter" className="h-7 inline" /></a>
+              <a href="#"><img src="https://static.lenskart.com/media/desktop/img/chat.svg" alt="Chat" className="h-7 inline" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

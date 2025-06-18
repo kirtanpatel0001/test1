@@ -23,6 +23,10 @@ const Login: React.FC = () => {
   }
 
   if (user) {
+    // If user is admin, redirect to dashboard, else to home
+    if (user.role === 'admin') {
+      return <Navigate to="/dashboard" replace />;
+    }
     return <Navigate to="/" replace />;
   }
 
