@@ -1,0 +1,74 @@
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+import { AuthProvider } from './contexts/AuthContext';
+import { ProtectedRoute } from './components/ProtectedRoute';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import Products from './pages/Products';
+import Users from './pages/Users';
+import Orders from './pages/Orders';
+import Staff from './pages/Staff';
+import Analytics from './pages/Analytics';
+import Layout from './components/Layout';
+import Signup from './pages/Signup';
+import Home from './pages/Home';
+
+function App() {
+  return (
+  <AuthProvider>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/dashboard" element={
+          <ProtectedRoute>
+            <Layout>
+              <Dashboard />
+            </Layout>
+          </ProtectedRoute>
+        } />
+        <Route path="/products" element={
+          <ProtectedRoute>
+            <Layout>
+              <Products />
+            </Layout>
+          </ProtectedRoute>
+        } />
+        <Route path="/users" element={
+          <ProtectedRoute>
+            <Layout>
+              <Users />
+            </Layout>
+          </ProtectedRoute>
+        } />
+        <Route path="/orders" element={
+          <ProtectedRoute>
+            <Layout>
+              <Orders />
+            </Layout>
+          </ProtectedRoute>
+        } />
+        <Route path="/staff" element={
+          <ProtectedRoute>
+            <Layout>
+              <Staff />
+            </Layout>
+          </ProtectedRoute>
+        } />
+        <Route path="/analytics" element={
+          <ProtectedRoute>
+            <Layout>
+              <Analytics />
+            </Layout>
+          </ProtectedRoute>
+        } />
+      </Routes>
+      <Toaster position="top-right" />
+    </Router>
+  </AuthProvider>
+  );
+}
+
+export default App;
