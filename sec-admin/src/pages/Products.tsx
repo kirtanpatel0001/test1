@@ -31,7 +31,6 @@ interface ProductForm {
 
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [editProduct, setEditProduct] = useState<Product | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -44,7 +43,8 @@ const Products: React.FC = () => {
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchTerm, selectedCategory]);
 
   const fetchProducts = async () => {
     try {
@@ -56,10 +56,8 @@ const Products: React.FC = () => {
         }
       });
       setProducts(response.data.products);
-    } catch (error) {
+    } catch {
       toast.error('Error fetching products');
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -77,8 +75,8 @@ const Products: React.FC = () => {
       setEditProduct(null);
       reset();
       fetchProducts();
-    } catch (error: any) {
-      toast.error(error.response?.data?.message || 'Error saving product');
+    } catch {
+      toast.error('Error saving product');
     }
   };
 
@@ -103,7 +101,7 @@ const Products: React.FC = () => {
         await axios.delete(`http://localhost:5000/api/products/${id}`);
         toast.success('Product deleted successfully');
         fetchProducts();
-      } catch (error) {
+      } catch {
         toast.error('Error deleting product');
       }
     }

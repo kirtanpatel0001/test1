@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { Glasses, Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 interface LoginForm {
@@ -13,6 +13,7 @@ const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
   const { login, user, loading } = useAuth();
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<LoginForm>();
+  const navigate = useNavigate();
 
   if (loading) {
     return (
@@ -41,14 +42,14 @@ const Login: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
-        <div className="text-center">
-          <div className="flex items-center justify-center space-x-2 mb-6">
-            <Glasses className="w-12 h-12 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">LensKart</h1>
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-900">Admin Panel</h2>
-          <p className="mt-2 text-gray-600">Sign in to your admin account</p>
-        </div>
+        <button
+          type="button"
+          className="mb-4 flex items-center text-blue-600 hover:text-blue-800"
+          onClick={() => navigate('/')}
+        >
+          <ArrowLeft className="w-6 h-6 mr-2" />
+          <span>Back to Home</span>
+        </button>
 
         <div className="bg-white py-8 px-6 shadow-xl rounded-xl">
           <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>

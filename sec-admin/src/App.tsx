@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './contexts/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
@@ -22,11 +22,16 @@ import StoreLocator from './pages/StoreLocator';
 import Brands from './pages/Brands';
 import Header from './components/Header';
 
-function App() {
+function AppRoutes() {
+  const location = useLocation();
+  // Hide header on all admin-related routes
+  const adminPaths = [
+    '/login', '/signup', '/dashboard', '/products', '/users', '/orders', '/staff', '/analytics'
+  ];
+  const hideHeader = adminPaths.some(path => location.pathname.startsWith(path));
   return (
-  <AuthProvider>
-    <Router>
-      <Header />
+    <>
+      {!hideHeader && <Header />}
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -83,9 +88,18 @@ function App() {
         <Route path="/store-locator" element={<StoreLocator />} />
         <Route path="/brands" element={<Brands />} />
       </Routes>
-      <Toaster position="top-right" />
-    </Router>
-  </AuthProvider>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <AuthProvider>
+      <Router>
+        <AppRoutes />
+        <Toaster position="top-right" />
+      </Router>
+    </AuthProvider>
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, ArrowLeft } from 'lucide-react';
 
 const Signup: React.FC = () => {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
@@ -35,7 +35,14 @@ const Signup: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-blue-200">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-center text-blue-700">Sign Up</h2>
+        <button
+          type="button"
+          className="mb-4 flex items-center text-blue-600 hover:text-blue-800"
+          onClick={() => navigate('/')}
+        >
+          <ArrowLeft className="w-6 h-6 mr-2" />
+          <span>Back to Home</span>
+        </button>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
