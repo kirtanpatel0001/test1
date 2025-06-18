@@ -20,11 +20,13 @@ import Sunglasses from './pages/Sunglasses';
 import HomeEyeTest from './pages/HomeEyeTest';
 import StoreLocator from './pages/StoreLocator';
 import Brands from './pages/Brands';
+import Header from './components/Header';
 
 function App() {
   return (
   <AuthProvider>
     <Router>
+      <Header />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

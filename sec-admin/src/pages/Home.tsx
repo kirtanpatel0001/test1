@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
 import HeroCarousel from '../components/HeroCarousel';
 
 const eyewearCategories = [
@@ -165,7 +164,6 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Header />
       <HeroCarousel />
       
       {/* Eyewear Category Carousel Section */}
