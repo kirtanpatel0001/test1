@@ -395,7 +395,7 @@ const Home: React.FC = () => {
       </section>
       <div className="w-full flex justify-center mt-8">
           <img
-            src="https://static5.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg"
+            src="https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg"
             alt="LK Air Banner"
             className="w-full max-w-screen-2xl object-cover rounded-lg shadow"
           />

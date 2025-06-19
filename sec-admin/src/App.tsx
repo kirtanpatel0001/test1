@@ -21,12 +21,13 @@ import HomeEyeTest from './pages/HomeEyeTest';
 import StoreLocator from './pages/StoreLocator';
 import Brands from './pages/Brands';
 import Header from './components/Header';
+import Cart from './pages/Cart';
 
 function AppRoutes() {
   const location = useLocation();
-  // Hide header on all admin-related routes
+  // Hide header on all admin-related routes and cart
   const adminPaths = [
-    '/login', '/signup', '/dashboard', '/products', '/users', '/orders', '/staff', '/analytics'
+    '/login', '/signup', '/dashboard', '/products', '/users', '/orders', '/staff', '/analytics', '/cart'
   ];
   const hideHeader = adminPaths.some(path => location.pathname.startsWith(path));
   return (
@@ -87,6 +88,7 @@ function AppRoutes() {
         <Route path="/home-eye-test" element={<HomeEyeTest />} />
         <Route path="/store-locator" element={<StoreLocator />} />
         <Route path="/brands" element={<Brands />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
