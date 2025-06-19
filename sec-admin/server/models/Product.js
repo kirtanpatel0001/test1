@@ -13,7 +13,7 @@ const productSchema = new mongoose.Schema({
   category: {
     type: String,
     required: true,
-    enum: ['eyeglasses', 'sunglasses', 'contact-lenses', 'accessories']
+    enum: ['eyeglasses', 'sunglasses', 'contact-lenses', 'accessories', 'kids-glasses']
   },
   brand: {
     type: String,
